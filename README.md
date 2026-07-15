@@ -38,24 +38,9 @@ It is designed to:
 
 ## Model Architecture
 
-```
- Input      Foundational    Pretrained     Space        Latent space           Output
- data       models          embeddings     rotation                           task
-
-+-------+   +-----------+   +---------+   +--------+   +--------------+
-| views | ->| pretrained| ->|  x^(m)  | ->| ortho- | ->| Generative G |
-| (img, |   | encoders  |   |         |   | gonal  |   +--------------+
-| text, |   +-----------+   +---------+   | rotat. |          \
-| clin.)|                                 +--------+           \--> Diagnosis
-+-------+                                                       /
-                                                    +--------------+
-                                                    | Discrim.   Z |
-                                                    +--------------+
-```
+![BIONIC architecture](assets/graphical_model.pdf)
 
 Structured clinical variables and pretrained embeddings are projected into a dual latent space: the **generative pathway (G)** models multimodal structure and missing data, while the **discriminative pathway (Z)** aggregates predictive information for the classification task.
-
-<!-- TODO: sustituir por una imagen (Fig. 1 del paper) cuando se suba el repo, si se quiere más fidelidad visual -->
 
 ---
 
