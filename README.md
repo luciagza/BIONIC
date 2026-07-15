@@ -7,6 +7,7 @@
 Official repository for the paper:
 
 **Bayesian Integration of Nonlinear Incomplete Clinical Data**
+
 *Submitted to IEEE Journal of Biomedical and Health Informatics (under review)*
 
 ---
