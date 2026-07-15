@@ -38,7 +38,7 @@ It is designed to:
 
 ## Model Architecture
 
-![BIONIC architecture](assets/graphicalModel.pdf)
+![BIONIC architecture](assets/graphicalModel.png)
 
 Structured clinical variables and pretrained embeddings are projected into a dual latent space: the **generative pathway (G)** models multimodal structure and missing data, while the **discriminative pathway (Z)** aggregates predictive information for the classification task.
 
