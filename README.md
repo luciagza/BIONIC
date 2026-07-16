@@ -59,6 +59,11 @@ To train the model on a specific dataset, run:
 python Models/main_github.py --fold {test fold} --seed {random seed}
 ```
 
+If you wish to reproduce the paper results, the arguments can take the following values:
+
+- `fold`: from 0 to 9 (10-fold cross-validation).
+- `seed`: from 0 to 9 (10 random seeds).
+
 This will:
 
 - Train the indicated model using the specified parameters and dataset.
