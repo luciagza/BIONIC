@@ -1,0 +1,9 @@
+numpy>=1.21
+scipy>=1.7
+scikit-learn>=1.0
+pandas>=1.3
+torch>=1.10
+
+# Only required if using the sparse feature-selection option (sparse_fs) in BIONIC.py,
+# which relies on pyro's RBF kernel (currently commented out in the provided code):
+# pyro-ppl>=1.8

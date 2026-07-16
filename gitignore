@@ -1,0 +1,41 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (no se sube, solo código)
+Data/
+Results/
+Results_imputation/
+
+# Logs / checkpoints de modelos
+*.log
+*.npy
+*.pt
+*.pth
+*.ckpt
+
+# Variables de entorno / secretos
+.env
