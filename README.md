@@ -7,7 +7,6 @@
 Official repository for the paper:
 
 **Bayesian Integration of Nonlinear Incomplete Clinical Data**
-
 *Submitted to IEEE Journal of Biomedical and Health Informatics (under review)*
 
 ---
@@ -57,10 +56,8 @@ Structured clinical variables and pretrained embeddings are projected into a dua
 To train the model on a specific dataset, run:
 
 ```
-python main_{dataset}.py --fold {test fold} --seed {random seed} --model {model to run}
+python Models/main_github.py --fold {test fold} --seed {random seed}
 ```
-
-<!-- TODO: ajustar esta sección a la interfaz real del código de Albert una vez lo tengamos -->
 
 This will:
 
@@ -76,9 +73,11 @@ BIONIC was evaluated on three publicly available multimodal clinical datasets:
 
 | Dataset | Patients | Modalities | Task |
 |---------|----------|------------|------|
-| [MMIST-ccRCC](https://arxiv.org/abs/2405.01658) | 618 | CT, MRI, WSI, genomic, clinical | 12-month survival classification |
-| [MOTUM](https://www.nature.com/articles/s41597-024-03634-0) | 67 | 4 MRI sequences (FLAIR, T1, T1ce, T2), clinical | Glioma vs. metastasis (binary) |
-| [TCGA-BRCA](https://www.cancer.gov/ccg/research/genome-sequencing/tcga) | 867 | WSI, diagnostic Q&A text, transcriptomics | Basal/triple-negative vs. other subtypes |
+| [MMIST-ccRCC](https://arxiv.org/abs/2405.01658) (Mota et al., CVPRW 2024) | 618 | CT, MRI, WSI, genomic, clinical | 12-month survival classification |
+| [MOTUM](https://www.nature.com/articles/s41597-024-03634-0) (Gong et al., Sci. Data 2024) | 67 | 4 MRI sequences (FLAIR, T1, T1ce, T2), clinical | Glioma vs. metastasis (binary) |
+| TCGA-BRCA | 867 | WSI, diagnostic Q&A text, transcriptomics | Basal/triple-negative vs. other subtypes |
+
+For TCGA-BRCA, the WSI, transcriptomic, and text data were processed following [Ren et al., MICCAI 2025 (OTSurv)](https://arxiv.org/abs/2506.20741), built on the original [TCGA Research Network breast cancer cohort](https://www.nature.com/articles/nature11412).
 
 > **Note:** Datasets are **not included** in this repository due to licensing / data-sharing restrictions. All datasets used are publicly available — see the links above for access instructions. Refer to the paper for full preprocessing and embedding-extraction details (Table II).
 
