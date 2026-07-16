@@ -75,11 +75,9 @@ BIONIC was evaluated on three publicly available multimodal clinical datasets:
 |---------|----------|------------|------|
 | [MMIST-ccRCC](https://arxiv.org/abs/2405.01658) (Mota et al., CVPRW 2024) | 618 | CT, MRI, WSI, genomic, clinical | 12-month survival classification |
 | [MOTUM](https://www.nature.com/articles/s41597-024-03634-0) (Gong et al., Sci. Data 2024) | 67 | 4 MRI sequences (FLAIR, T1, T1ce, T2), clinical | Glioma vs. metastasis (binary) |
-| TCGA-BRCA | 867 | WSI, diagnostic Q&A text, transcriptomics | Basal/triple-negative vs. other subtypes |
+| [TCGA-BRCA](https://www.nature.com/articles/nature11412) (TCGA Research Network, Nature 2012) | 867 | WSI, diagnostic Q&A text, transcriptomics | Basal/triple-negative vs. other subtypes |
 
-For TCGA-BRCA, the WSI, transcriptomic, and text data were processed following [Ren et al., MICCAI 2025 (OTSurv)](https://arxiv.org/abs/2506.20741), built on the original [TCGA Research Network breast cancer cohort](https://www.nature.com/articles/nature11412).
-
-> **Note:** Datasets are **not included** in this repository due to licensing / data-sharing restrictions. All datasets used are publicly available — see the links above for access instructions. Refer to the paper for full preprocessing and embedding-extraction details (Table II).
+> **Note:** Datasets are **not included** in this repository due to licensing / data-sharing restrictions. All datasets used are publicly available — see the links above for access instructions. TCGA-BRCA WSI, transcriptomic, and text data were processed following [Ren et al. (OTSurv, MICCAI 2025)](https://arxiv.org/abs/2506.20741). Refer to the paper for full preprocessing and embedding-extraction details (Table II).
 
 ---
 
