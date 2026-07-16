@@ -54,7 +54,7 @@ def main():
         X3_tr, X3_tst = X3[pos_tr, :], X3[pos_tst, :]
 
         ##################
-        # Dimensionality reduction via SVD, fit on the training partition
+        # SVD, fit on the training partition
         # only and then applied to the test partition, per modality.
         ##################
         N_COMPONENTS_CT = 100
