@@ -85,10 +85,10 @@ BIONIC was evaluated on three publicly available multimodal clinical datasets:
 
 After training, the following outputs will be available:
 
-- **Test metrics**: AUC and Balanced Accuracy (BACC), reported via 10-fold cross-validation.
-- **Predictive uncertainty**: mean Log Pointwise Predictive Density (LPPD) for calibration analysis.
-- **Interpretability**: a sensitivity metric S^(m) linking discriminative relevance to each modality's embedding space (see Eq. 5 in the paper).
-- **Saved predictions**: Stored in `./Results/{dataset}/{model}_{seed}_{fold}.npy`.
+- **Test metrics**: AUC and Balanced Accuracy (BACC) printed to console for each fold, plus the mean and standard deviation across folds.
+- **Saved labels**: The train/test label splits for each fold are stored in `./Results/{dataset}_weights/Y_{dataset}_tr.npy` and `Y_{dataset}_tst.npy`.
+
+> Note: the current script prints predictions and metrics to console but does not yet save the model's soft predictions to disk. If you need to persist predictions (e.g., for later analysis or the interpretability pipeline described in the paper), you'll need to add that saving step yourself.
 
 ---
 
